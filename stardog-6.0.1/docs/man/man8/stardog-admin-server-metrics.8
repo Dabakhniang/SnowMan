@@ -1,0 +1,67 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "STARDOG\-ADMIN_SERVER_METRICS" "8" "November 2018" "Stardog Union" "stardog-admin"
+.
+.SH "NAME"
+\fBstardog\-admin_server_metrics\fR \- Retrieves server metrics
+.
+.SH "SYNOPSIS"
+\fBstardog\-admin\fR [ \-\-krb5 ] [ \-\-krb5\-disable\-rdns ] [ \-\-server \fIserver url\fR ] \fBserver\fR \fBmetrics\fR [ {\-p | \-\-passwd} \fIpassword\fR ] [ {\-P | \-\-ask\-password} ] [ {\-u | \-\-username} \fIusername\fR ] [ {\-v | \-\-verbose} ] [\-\-] \fIspace\-separated metric name regex patterns\fR (see command examples)
+.
+.SH "OPTIONS"
+.
+.TP
+\fB\-\-krb5\fR
+Use the Kerberos environment\.
+.
+.TP
+\fB\-\-krb5\-disable\-rdns\fR
+Disable reverse DNS lookup for Kerberos clients\.
+.
+.TP
+\fB\-p\fR \fIpassword\fR, \fB\-\-passwd\fR \fIpassword\fR
+Password\.
+.
+.TP
+\fB\-P\fR, \fB\-\-ask\-password\fR
+Prompt for password\.
+.
+.TP
+\fB\-\-server\fR \fIserver url\fR
+URL of Stardog Server\. If this option isn\'t specified, it will be read from JVM argument \'stardog\.default\.cli\.server\'\. If the JVM arg isn\'t set, the default value \'http://localhost:5820\' is used\. If server URL has no explicit port value, the default port value \'5820\' is used\. Example: \'stardog\-admin \-\-server http://12\.34\.56\.78:5820 server stop\'
+.
+.TP
+\fB\-u\fR \fIusername\fR, \fB\-\-username\fR \fIusername\fR
+User name\.
+.
+.TP
+\fB\-v\fR, \fB\-\-verbose\fR
+Verbose flag that causes more detailed information to be printed
+.
+.TP
+\-\-
+This option can be used to separate command\-line options from the list of arguments (useful when arguments might be mistaken for command\-line options)\.
+.
+.TP
+\fIspace\-separated metric name regex patterns\fR (see command examples)
+Display only metrics, matching the specified patterns\.
+.
+.SH "EXAMPLES"
+.
+.TP
+Display all metrics:
+$ stardog\-admin server metrics
+.
+.TP
+Display dbms\.credentials\.cache\.size metric:
+$ stardog\-admin server metrics dbms\.credentials\.cache\.size
+.
+.TP
+Display dbms\.credentials\.cache\.size metric and metrics matching the pattern dbms\.mem\.\fI:\fR
+$ stardog\-admin server metrics dbms\.credentials\.cache\.size "dbms\.mem\."
+.
+.TP
+Display metrics matching dbms\.mem\.\fIand dbms\.memory\.\fR:
+$ stardog\-admin server metrics "dbms\.mem\.\fI" "dbms\.memory\.\fR"
+

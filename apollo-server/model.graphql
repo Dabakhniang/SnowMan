@@ -1,0 +1,50 @@
+# scalaires
+# pas de date ! il faut les définir dans des resolvers
+scalar Date
+#scalar JSON
+
+type snowManQueries{
+    value: String
+}
+
+
+type Member{
+    id: ID!
+    login: String
+}
+
+type MyQueryType{
+    # returns a small json chunk
+    cells(id: ID):[snowManQueries]
+    cellPlayer(id: ID):[snowManQueries]
+    cellLittleBall(id: ID):[snowManQueries]
+    cellMiddleBall(id: ID):[snowManQueries]
+    cellBigBall(id: ID):[snowManQueries]
+}
+
+# ... create Tiplets, update triplets
+type Mutation{
+	movePlayerNorth(id: ID): snowManQueries
+	movePlayerSouth(id: ID): snowManQueries
+	movePlayerEast(id: ID): snowManQueries
+	movePlayerWest(id: ID): snowManQueries
+}
+
+#type Subscription{
+#}
+
+schema{
+    query: MyQueryType
+    mutation: Mutation
+    #subscription: Subscription
+}
+
+# pour définir les données d'entrée
+input TwitInput{
+    author:AuthorInput
+}
+
+input AuthorInput{
+    id:ID
+    login:String
+}

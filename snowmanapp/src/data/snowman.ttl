@@ -1,0 +1,1304 @@
+@prefix : <http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/21416864/ontologies/2018/9/devoir> .
+
+<http://www.semanticweb.org/21416864/ontologies/2018/9/devoir> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#x
+:x rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#y
+:y rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#contains
+:contains rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isIn ;
+          rdfs:domain :Cell ;
+          rdfs:range :Object .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasEast
+:hasEast rdf:type owl:ObjectProperty ;
+         rdfs:domain :Cell ;
+         rdfs:range :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasNorth
+:hasNorth rdf:type owl:ObjectProperty ;
+          rdfs:domain :Cell ;
+          rdfs:range :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasSouth
+:hasSouth rdf:type owl:ObjectProperty ;
+          rdfs:domain :Cell ;
+          rdfs:range :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasWest
+:hasWest rdf:type owl:ObjectProperty ;
+         rdfs:domain :Cell ;
+         rdfs:range :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#isIn
+:isIn rdf:type owl:ObjectProperty ;
+      rdfs:domain :Object ;
+      rdfs:range :Cell .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasX
+:hasX rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#haxY
+:haxY rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell
+:Cell rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellBigBall
+:CellBigBall rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty :contains ;
+                                   owl:hasValue :bigBall
+                                 ] ;
+             rdfs:subClassOf :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellEastPlayer
+:CellEastPlayer rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasWest ;
+                                      owl:someValuesFrom :CellPlayer
+                                    ] ;
+                rdfs:subClassOf :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellFree
+:CellFree rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :Cell
+                                                     [ rdf:type owl:Class ;
+                                                       owl:complementOf [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :contains ;
+                                                                          owl:someValuesFrom :Object
+                                                                        ]
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellLittleBall
+:CellLittleBall rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :contains ;
+                                      owl:hasValue :littleBall
+                                    ] ;
+                rdfs:subClassOf :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellMiddleBall
+:CellMiddleBall rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :contains ;
+                                      owl:hasValue :middleBall
+                                    ] ;
+                rdfs:subClassOf :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellNorthPlayer
+:CellNorthPlayer rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasSouth ;
+                                       owl:someValuesFrom :CellPlayer
+                                     ] ;
+                 rdfs:subClassOf :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellPlayer
+:CellPlayer rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty :contains ;
+                                  owl:hasValue :snowMan
+                                ] ;
+            rdfs:subClassOf :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellSouthPlayer
+:CellSouthPlayer rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasNorth ;
+                                       owl:someValuesFrom :CellPlayer
+                                     ] ;
+                 rdfs:subClassOf :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellWestPlayer
+:CellWestPlayer rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasEast ;
+                                      owl:someValuesFrom :CellPlayer
+                                    ] ;
+                rdfs:subClassOf :Cell .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Object
+:Object rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#bigBall
+:bigBall rdf:type owl:NamedIndividual ,
+                  :Object .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell00
+:cell00 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :contains :snowMan ;
+        :hasEast :cell10 ;
+        :hasNorth :cell01 ;
+        :hasSouth :wall ;
+        :hasWest :wall ;
+        :x 0 ;
+        :y 0 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell01
+:cell01 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell11 ;
+        :hasNorth :cell02 ;
+        :hasSouth :cell00 ;
+        :hasWest :wall ;
+        :x 0 ;
+        :y 1 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell02
+:cell02 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell12 ;
+        :hasNorth :cell03 ;
+        :hasSouth :cell01 ;
+        :hasWest :wall ;
+        :x 0 ;
+        :y 2 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell03
+:cell03 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell13 ;
+        :hasNorth :cell04 ;
+        :hasSouth :cell02 ;
+        :hasWest :wall ;
+        :x 0 ;
+        :y 3 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell04
+:cell04 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell14 ;
+        :hasNorth :cell05 ;
+        :hasSouth :cell03 ;
+        :hasWest :wall ;
+        :x 0 ;
+        :y 4 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell05
+:cell05 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell15 ;
+        :hasNorth :cell06 ;
+        :hasSouth :cell04 ;
+        :hasWest :wall ;
+        :x 0 ;
+        :y 5 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell06
+:cell06 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell16 ;
+        :hasNorth :cell07 ;
+        :hasSouth :cell05 ;
+        :hasWest :wall ;
+        :x 0 ;
+        :y 6 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell07
+:cell07 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell17 ;
+        :hasNorth :cell08 ;
+        :hasSouth :cell06 ;
+        :hasWest :wall ;
+        :x 0 ;
+        :y 7 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell08
+:cell08 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell18 ;
+        :hasNorth :cell09 ;
+        :hasSouth :cell07 ;
+        :hasWest :wall ;
+        :x 0 ;
+        :y 8 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell09
+:cell09 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell19 ;
+        :hasNorth :wall ;
+        :hasSouth :cell08 ;
+        :hasWest :wall ;
+        :x 0 ;
+        :y 9 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell10
+:cell10 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell20 ;
+        :hasNorth :cell11 ;
+        :hasSouth :wall ;
+        :hasWest :cell00 ;
+        :x 1 ;
+        :y 0 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell11
+:cell11 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell21 ;
+        :hasNorth :cell12 ;
+        :hasSouth :cell10 ;
+        :hasWest :cell01 ;
+        :x 1 ;
+        :y 1 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell12
+:cell12 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell22 ;
+        :hasNorth :cell13 ;
+        :hasSouth :cell11 ;
+        :hasWest :cell02 ;
+        :x 1 ;
+        :y 2 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell13
+:cell13 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell23 ;
+        :hasNorth :cell14 ;
+        :hasSouth :cell12 ;
+        :hasWest :cell03 ;
+        :x 1 ;
+        :y 3 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell14
+:cell14 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell24 ;
+        :hasNorth :cell15 ;
+        :hasSouth :cell13 ;
+        :hasWest :cell04 ;
+        :x 1 ;
+        :y 4 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell15
+:cell15 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell25 ;
+        :hasNorth :cell16 ;
+        :hasSouth :cell14 ;
+        :hasWest :cell05 ;
+        :x 1 ;
+        :y 5 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell16
+:cell16 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell26 ;
+        :hasNorth :cell17 ;
+        :hasSouth :cell15 ;
+        :hasWest :cell06 ;
+        :x 1 ;
+        :y 6 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell17
+:cell17 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell27 ;
+        :hasNorth :cell18 ;
+        :hasSouth :cell16 ;
+        :hasWest :cell07 ;
+        :x 1 ;
+        :y 7 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell18
+:cell18 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell28 ;
+        :hasNorth :cell19 ;
+        :hasSouth :cell17 ;
+        :hasWest :cell08 ;
+        :x 1 ;
+        :y 8 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell19
+:cell19 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell29 ;
+        :hasNorth :wall ;
+        :hasSouth :cell18 ;
+        :hasWest :cell09 ;
+        :x 1 ;
+        :y 9 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell20
+:cell20 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell30 ;
+        :hasNorth :cell21 ;
+        :hasSouth :wall ;
+        :hasWest :cell10 ;
+        :x 2 ;
+        :y 0 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell21
+:cell21 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell31 ;
+        :hasNorth :cell22 ;
+        :hasSouth :cell20 ;
+        :hasWest :cell11 ;
+        :x 2 ;
+        :y 1 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell22
+:cell22 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell32 ;
+        :hasNorth :cell23 ;
+        :hasSouth :cell21 ;
+        :hasWest :cell12 ;
+        :x 2 ;
+        :y 2 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell23
+:cell23 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell33 ;
+        :hasNorth :cell24 ;
+        :hasSouth :cell22 ;
+        :hasWest :cell13 ;
+        :x 2 ;
+        :y 3 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell24
+:cell24 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell34 ;
+        :hasNorth :cell25 ;
+        :hasSouth :cell23 ;
+        :hasWest :cell14 ;
+        :x 2 ;
+        :y 4 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell25
+:cell25 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell35 ;
+        :hasNorth :cell26 ;
+        :hasSouth :cell24 ;
+        :hasWest :cell15 ;
+        :x 2 ;
+        :y 5 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell26
+:cell26 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell36 ;
+        :hasNorth :cell27 ;
+        :hasSouth :cell25 ;
+        :hasWest :cell16 ;
+        :x 2 ;
+        :y 6 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell27
+:cell27 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell37 ;
+        :hasNorth :cell28 ;
+        :hasSouth :cell26 ;
+        :hasWest :cell17 ;
+        :x 2 ;
+        :y 7 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell28
+:cell28 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell38 ;
+        :hasNorth :cell29 ;
+        :hasSouth :cell27 ;
+        :hasWest :cell18 ;
+        :x 2 ;
+        :y 8 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell29
+:cell29 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell39 ;
+        :hasNorth :wall ;
+        :hasSouth :cell28 ;
+        :hasWest :cell19 ;
+        :x 2 ;
+        :y 9 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell30
+:cell30 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell40 ;
+        :hasNorth :cell31 ;
+        :hasSouth :wall ;
+        :hasWest :cell20 ;
+        :x 3 ;
+        :y 0 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell31
+:cell31 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell41 ;
+        :hasNorth :cell32 ;
+        :hasSouth :cell30 ;
+        :hasWest :cell21 ;
+        :x 3 ;
+        :y 1 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell32
+:cell32 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell42 ;
+        :hasNorth :cell33 ;
+        :hasSouth :cell31 ;
+        :hasWest :cell22 ;
+        :x 3 ;
+        :y 2 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell33
+:cell33 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell43 ;
+        :hasNorth :cell34 ;
+        :hasSouth :cell32 ;
+        :hasWest :cell23 ;
+        :x 3 ;
+        :y 3 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell34
+:cell34 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell44 ;
+        :hasNorth :cell35 ;
+        :hasSouth :cell33 ;
+        :hasWest :cell24 ;
+        :x 3 ;
+        :y 4 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell35
+:cell35 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell45 ;
+        :hasNorth :cell36 ;
+        :hasSouth :cell34 ;
+        :hasWest :cell25 ;
+        :x 3 ;
+        :y 5 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell36
+:cell36 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell46 ;
+        :hasNorth :cell37 ;
+        :hasSouth :cell35 ;
+        :hasWest :cell26 ;
+        :x 3 ;
+        :y 6 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell37
+:cell37 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell47 ;
+        :hasNorth :cell38 ;
+        :hasSouth :cell36 ;
+        :hasWest :cell27 ;
+        :x 3 ;
+        :y 7 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell38
+:cell38 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell48 ;
+        :hasNorth :cell39 ;
+        :hasSouth :cell37 ;
+        :hasWest :cell28 ;
+        :x 3 ;
+        :y 8 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell39
+:cell39 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell49 ;
+        :hasNorth :wall ;
+        :hasSouth :cell38 ;
+        :hasWest :cell29 ;
+        :x 3 ;
+        :y 9 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell40
+:cell40 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell50 ;
+        :hasNorth :cell41 ;
+        :hasSouth :wall ;
+        :hasWest :cell30 ;
+        :x 4 ;
+        :y 0 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell41
+:cell41 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell51 ;
+        :hasNorth :cell42 ;
+        :hasSouth :cell40 ;
+        :hasWest :cell31 ;
+        :x 4 ;
+        :y 1 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell42
+:cell42 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell52 ;
+        :hasNorth :cell43 ;
+        :hasSouth :cell41 ;
+        :hasWest :cell32 ;
+        :x 4 ;
+        :y 2 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell43
+:cell43 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell53 ;
+        :hasNorth :cell44 ;
+        :hasSouth :cell42 ;
+        :hasWest :cell33 ;
+        :x 4 ;
+        :y 3 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell44
+:cell44 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell54 ;
+        :hasNorth :cell45 ;
+        :hasSouth :cell43 ;
+        :hasWest :cell34 ;
+        :x 4 ;
+        :y 4 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell45
+:cell45 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell55 ;
+        :hasNorth :cell46 ;
+        :hasSouth :cell44 ;
+        :hasWest :cell35 ;
+        :x 4 ;
+        :y 5 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell46
+:cell46 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell56 ;
+        :hasNorth :cell47 ;
+        :hasSouth :cell45 ;
+        :hasWest :cell36 ;
+        :x 4 ;
+        :y 6 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell47
+:cell47 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell57 ;
+        :hasNorth :cell48 ;
+        :hasSouth :cell46 ;
+        :hasWest :cell37 ;
+        :x 4 ;
+        :y 7 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell48
+:cell48 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell58 ;
+        :hasNorth :cell49 ;
+        :hasSouth :cell47 ;
+        :hasWest :cell38 ;
+        :x 4 ;
+        :y 8 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell49
+:cell49 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell59 ;
+        :hasNorth :wall ;
+        :hasSouth :cell48 ;
+        :hasWest :cell39 ;
+        :x 4 ;
+        :y 9 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell50
+:cell50 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell60 ;
+        :hasNorth :cell51 ;
+        :hasSouth :wall ;
+        :hasWest :cell40 ;
+        :x 5 ;
+        :y 0 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell51
+:cell51 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell61 ;
+        :hasNorth :cell52 ;
+        :hasSouth :cell50 ;
+        :hasWest :cell41 ;
+        :x 5 ;
+        :y 1 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell52
+:cell52 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell62 ;
+        :hasNorth :cell53 ;
+        :hasSouth :cell51 ;
+        :hasWest :cell42 ;
+        :x 5 ;
+        :y 2 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell53
+:cell53 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell63 ;
+        :hasNorth :cell54 ;
+        :hasSouth :cell52 ;
+        :hasWest :cell43 ;
+        :x 5 ;
+        :y 3 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell54
+:cell54 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell64 ;
+        :hasNorth :cell55 ;
+        :hasSouth :cell53 ;
+        :hasWest :cell44 ;
+        :x 5 ;
+        :y 4 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell55
+:cell55 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell65 ;
+        :hasNorth :cell56 ;
+        :hasSouth :cell54 ;
+        :hasWest :cell45 ;
+        :x 5 ;
+        :y 5 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell56
+:cell56 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell66 ;
+        :hasNorth :cell57 ;
+        :hasSouth :cell55 ;
+        :hasWest :cell46 ;
+        :x 5 ;
+        :y 6 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell57
+:cell57 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell67 ;
+        :hasNorth :cell58 ;
+        :hasSouth :cell56 ;
+        :hasWest :cell47 ;
+        :x 5 ;
+        :y 7 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell58
+:cell58 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell68 ;
+        :hasNorth :cell59 ;
+        :hasSouth :cell57 ;
+        :hasWest :cell48 ;
+        :x 5 ;
+        :y 8 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell59
+:cell59 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell69 ;
+        :hasNorth :wall ;
+        :hasSouth :cell58 ;
+        :hasWest :cell49 ;
+        :x 5 ;
+        :y 9 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell60
+:cell60 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell70 ;
+        :hasNorth :cell61 ;
+        :hasSouth :wall ;
+        :hasWest :cell50 ;
+        :x 6 ;
+        :y 0 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell61
+:cell61 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell71 ;
+        :hasNorth :cell62 ;
+        :hasSouth :cell60 ;
+        :hasWest :cell51 ;
+        :x 6 ;
+        :y 1 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell62
+:cell62 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell72 ;
+        :hasNorth :cell63 ;
+        :hasSouth :cell61 ;
+        :hasWest :cell52 ;
+        :x 6 ;
+        :y 2 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell63
+:cell63 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell73 ;
+        :hasNorth :cell64 ;
+        :hasSouth :cell62 ;
+        :hasWest :cell53 ;
+        :x 6 ;
+        :y 3 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell64
+:cell64 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell74 ;
+        :hasNorth :cell65 ;
+        :hasSouth :cell63 ;
+        :hasWest :cell54 ;
+        :x 6 ;
+        :y 4 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell65
+:cell65 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell75 ;
+        :hasNorth :cell66 ;
+        :hasSouth :cell64 ;
+        :hasWest :cell55 ;
+        :x 6 ;
+        :y 5 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell66
+:cell66 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell76 ;
+        :hasNorth :cell67 ;
+        :hasSouth :cell65 ;
+        :hasWest :cell56 ;
+        :x 6 ;
+        :y 6 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell67
+:cell67 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell77 ;
+        :hasNorth :cell68 ;
+        :hasSouth :cell66 ;
+        :hasWest :cell57 ;
+        :x 6 ;
+        :y 7 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell68
+:cell68 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell78 ;
+        :hasNorth :cell69 ;
+        :hasSouth :cell67 ;
+        :hasWest :cell58 ;
+        :x 6 ;
+        :y 8 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell69
+:cell69 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell79 ;
+        :hasNorth :wall ;
+        :hasSouth :cell68 ;
+        :hasWest :cell59 ;
+        :x 6 ;
+        :y 9 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell70
+:cell70 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell80 ;
+        :hasNorth :cell71 ;
+        :hasSouth :wall ;
+        :hasWest :cell60 ;
+        :x 7 ;
+        :y 0 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell71
+:cell71 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell81 ;
+        :hasNorth :cell72 ;
+        :hasSouth :cell70 ;
+        :hasWest :cell61 ;
+        :x 7 ;
+        :y 1 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell72
+:cell72 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell82 ;
+        :hasNorth :cell73 ;
+        :hasSouth :cell71 ;
+        :hasWest :cell62 ;
+        :x 7 ;
+        :y 2 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell73
+:cell73 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell83 ;
+        :hasNorth :cell74 ;
+        :hasSouth :cell72 ;
+        :hasWest :cell63 ;
+        :x 7 ;
+        :y 3 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell74
+:cell74 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell84 ;
+        :hasNorth :cell75 ;
+        :hasSouth :cell73 ;
+        :hasWest :cell64 ;
+        :x 7 ;
+        :y 4 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell75
+:cell75 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell85 ;
+        :hasNorth :cell76 ;
+        :hasSouth :cell74 ;
+        :hasWest :cell65 ;
+        :x 7 ;
+        :y 5 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell76
+:cell76 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell86 ;
+        :hasNorth :cell77 ;
+        :hasSouth :cell75 ;
+        :hasWest :cell66 ;
+        :x 7 ;
+        :y 6 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell77
+:cell77 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell87 ;
+        :hasNorth :cell78 ;
+        :hasSouth :cell76 ;
+        :hasWest :cell67 ;
+        :x 7 ;
+        :y 7 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell78
+:cell78 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell88 ;
+        :hasNorth :cell79 ;
+        :hasSouth :cell77 ;
+        :hasWest :cell68 ;
+        :x 7 ;
+        :y 8 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell79
+:cell79 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell89 ;
+        :hasNorth :wall ;
+        :hasSouth :cell78 ;
+        :hasWest :cell69 ;
+        :x 7 ;
+        :y 9 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell80
+:cell80 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell90 ;
+        :hasNorth :cell81 ;
+        :hasSouth :wall ;
+        :hasWest :cell70 ;
+        :x 8 ;
+        :y 0 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell81
+:cell81 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell91 ;
+        :hasNorth :cell82 ;
+        :hasSouth :cell80 ;
+        :hasWest :cell71 ;
+        :x 8 ;
+        :y 1 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell82
+:cell82 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell92 ;
+        :hasNorth :cell83 ;
+        :hasSouth :cell81 ;
+        :hasWest :cell72 ;
+        :x 8 ;
+        :y 2 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell83
+:cell83 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell93 ;
+        :hasNorth :cell84 ;
+        :hasSouth :cell82 ;
+        :hasWest :cell73 ;
+        :x 8 ;
+        :y 3 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell84
+:cell84 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell94 ;
+        :hasNorth :cell85 ;
+        :hasSouth :cell83 ;
+        :hasWest :cell74 ;
+        :x 8 ;
+        :y 4 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell85
+:cell85 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell95 ;
+        :hasNorth :cell86 ;
+        :hasSouth :cell84 ;
+        :hasWest :cell75 ;
+        :x 8 ;
+        :y 5 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell86
+:cell86 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell96 ;
+        :hasNorth :cell87 ;
+        :hasSouth :cell85 ;
+        :hasWest :cell76 ;
+        :x 8 ;
+        :y 6 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell87
+:cell87 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell97 ;
+        :hasNorth :cell88 ;
+        :hasSouth :cell86 ;
+        :hasWest :cell77 ;
+        :x 8 ;
+        :y 7 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell88
+:cell88 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell98 ;
+        :hasNorth :cell89 ;
+        :hasSouth :cell87 ;
+        :hasWest :cell78 ;
+        :x 8 ;
+        :y 8 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell89
+:cell89 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :cell99 ;
+        :hasNorth :wall ;
+        :hasSouth :cell88 ;
+        :hasWest :cell79 ;
+        :x 8 ;
+        :y 9 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell90
+:cell90 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :wall ;
+        :hasNorth :cell91 ;
+        :hasSouth :wall ;
+        :hasWest :cell80 ;
+        :x 9 ;
+        :y 0 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell91
+:cell91 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :wall ;
+        :hasNorth :cell92 ;
+        :hasSouth :cell90 ;
+        :hasWest :cell81 ;
+        :x 9 ;
+        :y 1 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell92
+:cell92 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :wall ;
+        :hasNorth :cell93 ;
+        :hasSouth :cell91 ;
+        :hasWest :cell82 ;
+        :x 9 ;
+        :y 2 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell93
+:cell93 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :wall ;
+        :hasNorth :cell94 ;
+        :hasSouth :cell92 ;
+        :hasWest :cell83 ;
+        :x 9 ;
+        :y 3 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell94
+:cell94 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :wall ;
+        :hasNorth :cell95 ;
+        :hasSouth :cell93 ;
+        :hasWest :cell84 ;
+        :x 9 ;
+        :y 4 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell95
+:cell95 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :wall ;
+        :hasNorth :cell96 ;
+        :hasSouth :cell94 ;
+        :hasWest :cell85 ;
+        :x 9 ;
+        :y 5 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell96
+:cell96 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :wall ;
+        :hasNorth :cell97 ;
+        :hasSouth :cell95 ;
+        :hasWest :cell86 ;
+        :x 9 ;
+        :y 6 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell97
+:cell97 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :wall ;
+        :hasNorth :cell98 ;
+        :hasSouth :cell96 ;
+        :hasWest :cell87 ;
+        :x 9 ;
+        :y 7 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell98
+:cell98 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :wall ;
+        :hasNorth :cell99 ;
+        :hasSouth :cell97 ;
+        :hasWest :cell88 ;
+        :x 9 ;
+        :y 8 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell99
+:cell99 rdf:type owl:NamedIndividual ,
+                 :Cell ;
+        :hasEast :wall ;
+        :hasNorth :wall ;
+        :hasSouth :cell98 ;
+        :hasWest :cell89 ;
+        :x 9 ;
+        :y 9 .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#littleBall
+:littleBall rdf:type owl:NamedIndividual ,
+                     :Object .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#middleBall
+:middleBall rdf:type owl:NamedIndividual ,
+                     :Object .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#snowMan
+:snowMan rdf:type owl:NamedIndividual ,
+                  :Object .
+
+
+###  http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall
+:wall rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi

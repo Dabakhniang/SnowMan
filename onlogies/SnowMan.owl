@@ -1,0 +1,1735 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#"
+     xml:base="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#x -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#x"/>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#y -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#y"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#isIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasEast -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasEast">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasNorth -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasNorth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasSouth -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasSouth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasWest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasWest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#isIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#isIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasX -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasX"/>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#haxY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#haxY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellBigBall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellBigBall">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#contains"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#bigBall"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellEastPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellEastPlayer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasWest"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellPlayer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellFree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellFree">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#contains"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Object"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellLittleBall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellLittleBall">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#contains"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#littleBall"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellMiddleBall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellMiddleBall">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#contains"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#middleBall"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellNorthPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellNorthPlayer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasSouth"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellPlayer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellPlayer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#contains"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#snowMan"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellSouthPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellSouthPlayer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasNorth"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellPlayer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellWestPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellWestPlayer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#hasEast"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#CellPlayer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Object"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#bigBall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#bigBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell00 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell00">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <contains rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#snowMan"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell10"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell01"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell11"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell02"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell00"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell12"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell03"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell01"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell13"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell04"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell02"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell14"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell05"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell03"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell15"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell06"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell04"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell16"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell07"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell05"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell17"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell08"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell06"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell18"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell09"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell07"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell19"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell08"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell20"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell11"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell00"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell21"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell12"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell10"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell01"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell22"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell13"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell11"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell02"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell23"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell14"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell12"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell03"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell24"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell15"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell13"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell04"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell25"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell16"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell14"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell05"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell26"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell17"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell15"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell06"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell27"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell18"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell16"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell07"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell28"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell19"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell17"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell08"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell29"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell18"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell09"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell30"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell21"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell10"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell31"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell22"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell20"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell11"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell32"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell23"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell21"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell12"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell33"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell24"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell22"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell13"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell34"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell25"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell23"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell14"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell35"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell26"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell24"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell15"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell36"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell27"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell25"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell16"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell37"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell28"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell26"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell17"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell28">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell38"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell29"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell27"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell18"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell29">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell39"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell28"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell19"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell40"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell31"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell20"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell31">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell41"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell32"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell30"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell21"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell32">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell42"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell33"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell31"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell22"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell33">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell43"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell34"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell32"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell23"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell34 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell34">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell44"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell35"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell33"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell24"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell35">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell45"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell36"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell34"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell25"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell36 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell36">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell46"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell37"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell35"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell26"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell37 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell37">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell47"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell38"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell36"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell27"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell38 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell38">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell48"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell39"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell37"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell28"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell39 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell39">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell49"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell38"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell29"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell40">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell50"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell41"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell30"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell41 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell41">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell51"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell42"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell40"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell31"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell42 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell42">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell52"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell43"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell41"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell32"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell43 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell43">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell53"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell44"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell42"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell33"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell44 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell44">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell54"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell45"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell43"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell34"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell45 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell45">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell55"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell46"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell44"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell35"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell46 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell46">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell56"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell47"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell45"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell36"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell47 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell47">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell57"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell48"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell46"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell37"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell48 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell48">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell58"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell49"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell47"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell38"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell49 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell49">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell59"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell48"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell39"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell50 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell50">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell60"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell51"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell40"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell51 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell51">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell61"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell52"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell50"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell41"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell52 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell52">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell62"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell53"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell51"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell42"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell53 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell53">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell63"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell54"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell52"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell43"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell54 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell54">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell64"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell55"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell53"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell44"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell55 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell55">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell65"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell56"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell54"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell45"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell56 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell56">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell66"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell57"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell55"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell46"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell57 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell57">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell67"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell58"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell56"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell47"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell58 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell58">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell68"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell59"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell57"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell48"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell59 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell59">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell69"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell58"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell49"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell60 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell60">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell70"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell61"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell50"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell61 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell61">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell71"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell62"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell60"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell51"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell62 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell62">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell72"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell63"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell61"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell52"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell63 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell63">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell73"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell64"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell62"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell53"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell64 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell64">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell74"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell65"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell63"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell54"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell65 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell65">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell75"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell66"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell64"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell55"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell66 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell66">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell76"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell67"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell65"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell56"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell67 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell67">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell77"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell68"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell66"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell57"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell68 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell68">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell78"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell69"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell67"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell58"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell69 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell69">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell79"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell68"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell59"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell70 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell70">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell80"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell71"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell60"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell71 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell71">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell81"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell72"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell70"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell61"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell72 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell72">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell82"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell73"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell71"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell62"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell73 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell73">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell83"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell74"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell72"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell63"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell74 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell74">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell84"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell75"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell73"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell64"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell75 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell75">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell85"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell76"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell74"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell65"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell76 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell76">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell86"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell77"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell75"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell66"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell77 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell77">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell87"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell78"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell76"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell67"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell78 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell78">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell88"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell79"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell77"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell68"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell79 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell79">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell89"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell78"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell69"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell80 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell80">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell90"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell81"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell70"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell81 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell81">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell91"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell82"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell80"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell71"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell82 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell82">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell92"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell83"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell81"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell72"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell83 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell83">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell93"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell84"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell82"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell73"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell84 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell84">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell94"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell85"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell83"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell74"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell85 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell85">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell95"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell86"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell84"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell75"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell86 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell86">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell96"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell87"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell85"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell76"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell87 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell87">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell97"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell88"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell86"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell77"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell88 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell88">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell98"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell89"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell87"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell78"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell89 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell89">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell99"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell88"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell79"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell90 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell90">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell91"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell80"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell91 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell91">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell92"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell90"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell81"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell92 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell92">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell93"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell91"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell82"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell93 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell93">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell94"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell92"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell83"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell94 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell94">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell95"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell93"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell84"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell95 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell95">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell96"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell94"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell85"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell96 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell96">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell97"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell95"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell86"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell97 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell97">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell98"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell96"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell87"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell98 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell98">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell99"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell97"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell88"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell99 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell99">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Cell"/>
+        <hasEast rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasNorth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+        <hasSouth rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell98"/>
+        <hasWest rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#cell89"/>
+        <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</x>
+        <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#littleBall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#littleBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#middleBall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#middleBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#snowMan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#snowMan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/21416864/ontologies/2018/9/devoir#wall"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

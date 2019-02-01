@@ -1,0 +1,41 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "STARDOG\-ADMIN_SERVER_PROFILE" "8" "November 2018" "Stardog Union" "stardog-admin"
+.
+.SH "NAME"
+\fBstardog\-admin_server_profile\fR \- Profile server (CPU, heap allocations, locks)
+.
+.SH "SYNOPSIS"
+\fBstardog\-admin\fR \fBserver\fR \fBprofile\fR [ {\-d | \-\-duration} \fIduration\fR ] [ {\-e | \-\-event} \fIevent\fR ] [ {\-f | \-\-file} \fIoutputFile\fR ] [ {\-h | \-\-host} \fIDatabase Host\fR ] [ {\-le | \-\-listAvailableEvents} ] [ {\-p | \-\-port} \fIJMX Port\fR ] [ {\-r | \-\-reverse\-flamegraph} ]
+.
+.SH "OPTIONS"
+.
+.TP
+\fB\-d\fR \fIduration\fR, \fB\-\-duration\fR \fIduration\fR
+Profiling duration, in seconds\. Default is 30 seconds\.
+.
+.TP
+\fB\-e\fR \fIevent\fR, \fB\-\-event\fR \fIevent\fR
+Profiling event, one of cpu, alloc, lock, etc\. The default is cpu\. To list all available options use \-\-listAvailableEvents option
+.
+.TP
+\fB\-f\fR \fIoutputFile\fR, \fB\-\-file\fR \fIoutputFile\fR
+Result output file\. If not provided, the result is dumped in console\. If the provided file name has \.svg extension, flamegraph is written out, otherwise (and also when the file is not provided) plain text summary+stacks output\.
+.
+.TP
+\fB\-h\fR \fIDatabase Host\fR, \fB\-\-host\fR \fIDatabase Host\fR
+Stardog database host\. Default is localhost\.
+.
+.TP
+\fB\-le\fR, \fB\-\-listAvailableEvents\fR
+An option to list all available profiling events, to specify one with \-\-event option\.
+.
+.TP
+\fB\-p\fR \fIJMX Port\fR, \fB\-\-port\fR \fIJMX Port\fR
+Stardog database JMX port\. The default is 5833
+.
+.TP
+\fB\-r\fR, \fB\-\-reverse\-flamegraph\fR
+If the output format is \.svg (see \-f option), a reserved flamegraph is generated\. It\'s useful to visualize profiling results when some hot \'leaf\' methods are called from many different places\. Default: false\.
+

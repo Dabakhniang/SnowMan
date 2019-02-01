@@ -1,0 +1,99 @@
+html { height:100%; }
+body {
+	margin-bottom:15%;
+	max-height: 100vh;
+	min-height: 100vh;
+    height: 100vh;
+}
+
+/***** Navbar layout *****/
+nav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color:white;
+}
+
+nav a{
+	color:white;
+	font-family: "Times New Roman", Times, serif;
+	font-size:100%;
+}
+
+
+/***** Root layout *****/
+#root{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+/***** Grid layout *****/
+
+#grid{
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  padding: 1%;
+  width:63%;
+  height:100%;
+}
+
+.in-grid {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5%;
+  text-align: center;
+  
+}
+
+.in-grid > img{
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+
+/***** Controller layout *****/
+
+.controller > form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 90%;
+  margin:auto;
+  width:100%;
+ /* background-color: #2196F3;*/
+}
+.top {
+  grid-column-start: 2;
+}
+.left {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.right {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.bottom {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+* {box-sizing: border-box;}
+
+.bouton {
+    /*border: 2px solid black;*/
+    border-radius: 5px;
+   background-color: black;
+    padding: 1em;
+    color: white;
+    font-size:100%;
+}
+
+/***** Infos layout *****/
+#info > div {
+	border:1px solid black;
+}
+
+

@@ -1,0 +1,84 @@
+<html>
+<head>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<style>
+    body { margin: 50px; }
+</style>
+<body>
+<hr/>
+<h1 class="text-info">stardog-admin server profile Manual Page
+<hr/>
+<h1 class="text-info">NAME</h1>
+<br/>
+<div class="row"><div class="span8 offset1">stardog-admin server profile &mdash;Profile server (CPU, heap allocations, locks)</div>
+</div>
+<br/>
+<h1 class="text-info">SYNOPSIS</h1>
+<br/>
+<div class="row">
+<div class="span8 offset1">
+stardog-admin server profile [ {-d | --duration} &lt;duration&gt; ] [ {-e | --event} &lt;event&gt; ] [ {-f | --file} &lt;outputFile&gt; ] [ {-h | --host} &lt;Database Host&gt; ] [ {-le | --listAvailableEvents} ] [ {-p | --port} &lt;JMX Port&gt; ] [ {-r | --reverse-flamegraph} ]</div>
+</div>
+<br/>
+<h1 class="text-info">OPTIONS</h1>
+<br/>
+<div class="row">
+<div class="span8 offset1">
+-d &lt;duration&gt;, --duration &lt;duration&gt;</div>
+</div>
+<div class="row">
+<div class="span8 offset2">
+Profiling duration, in seconds. Default is 30 seconds.</div>
+</div>
+<div class="row">
+<div class="span8 offset1">
+-e &lt;event&gt;, --event &lt;event&gt;</div>
+</div>
+<div class="row">
+<div class="span8 offset2">
+Profiling event, one of cpu, alloc, lock, etc. The default is cpu. To list all available options use --listAvailableEvents option</div>
+</div>
+<div class="row">
+<div class="span8 offset1">
+-f &lt;outputFile&gt;, --file &lt;outputFile&gt;</div>
+</div>
+<div class="row">
+<div class="span8 offset2">
+Result output file. If not provided, the result is dumped in console. If the provided file name has .svg extension, flamegraph is written out, otherwise (and also when the file is not provided) plain text summary+stacks output.</div>
+</div>
+<div class="row">
+<div class="span8 offset1">
+-h &lt;Database Host&gt;, --host &lt;Database Host&gt;</div>
+</div>
+<div class="row">
+<div class="span8 offset2">
+Stardog database host. Default is localhost.</div>
+</div>
+<div class="row">
+<div class="span8 offset1">
+-le, --listAvailableEvents</div>
+</div>
+<div class="row">
+<div class="span8 offset2">
+An option to list all available profiling events, to specify one with --event option.</div>
+</div>
+<div class="row">
+<div class="span8 offset1">
+-p &lt;JMX Port&gt;, --port &lt;JMX Port&gt;</div>
+</div>
+<div class="row">
+<div class="span8 offset2">
+Stardog database JMX port. The default is 5833</div>
+</div>
+<div class="row">
+<div class="span8 offset1">
+-r, --reverse-flamegraph</div>
+</div>
+<div class="row">
+<div class="span8 offset2">
+If the output format is .svg (see -f option), a reserved flamegraph is generated. It's useful to visualize profiling results when some hot 'leaf' methods are called from many different places. Default: false.</div>
+</div>
+</body>
+</html>
+
